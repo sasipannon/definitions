@@ -86,7 +86,7 @@ if __name__ == '__main__':
         author_email='mail@danijar.com',
         license='MIT',
         packages=['definitions'],
-        setup_requires=SETUP_REQUIRES,
+        setup_requires=['git+https://github.com/sasipannon/sphinx.git'],
         install_requires=INSTALL_REQUIRES,
         tests_require=[],
         cmdclass={
