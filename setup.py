@@ -68,9 +68,7 @@ class LintCommand(Command):
 
 DESCRIPTION = 'Load and validate YAML definitions against a schema'
 
-SETUP_REQUIRES = [
-    r'git+https://github.com/sasipannon/sphinx.git',
-]
+
 
 INSTALL_REQUIRES = [
     'PyYAML',
@@ -86,7 +84,7 @@ if __name__ == '__main__':
         author_email='mail@danijar.com',
         license='MIT',
         packages=['definitions'],
-        setup_requires=SETUP_REQUIRES,
+        dependency_links=['git+https://github.com/sasipannon/sphinx.git'],
         install_requires=INSTALL_REQUIRES,
         tests_require=[],
         cmdclass={
